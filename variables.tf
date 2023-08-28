@@ -65,3 +65,22 @@ variable "api_management_gateway_location_name" {
   type        = string
   description = "Api Management gateway Location Name"
 }
+variable "subscription_id" {
+  type        = string
+  description = "Subscription ID"
+}
+
+variable "tenant_id" {
+  type        = string
+  description = "Tenant ID"
+}
+
+variable "client_id" {
+  type        = string
+  description = "Client ID"
+}
+
+variable "client_secret" {
+  type        = string
+  description = "ClientSecret"
+}
