@@ -1,103 +1,67 @@
+
 variable "resource_group_name" {
   type        = string
   description = "RG name in Azure"
 }
-
-variable "location" {
-  type        = string
-  description = "Resources location in Azure"
-}
-
-variable "cluster_name" {
-  type        = string
-  description = "AKS name in Azure"
-}
-
-variable "kubernetes_version" {
-  type        = string
-  description = "Kubernetes version"
-}
-
-variable "system_node_count" {
-  type        = number
-  description = "Number of AKS worker nodes"
-}
-
-variable "acr_name" {
-  type        = string
-  description = "ACR name"
- 
-}
-
-variable "role_definition_name" {
-  type        = string
-  description = "Role Definition Name"
-}
-variable "azurerm_container_registry_sku" {
-  type        = string
-  description = "ACR SKU"
-}
-
-variable "azurerm_container_registry_Admin_Enabled" {
-  type        = string
-  description = "ACR Admin Enabled"
-}
-variable "Azure_Role_Assignment_skip_service_principal_aad_check" {
-  type        = string
-  description = "skip service principal aad check"
-}
-variable "AKS_Default_Node_pool_Name" {
-  type        = string
-  description = "Default node pool name"
-  
-}
- 
-
-variable "AKS_Default_Node_pool_VM_Size" {
-  type        = string
-  description = "Default node pool vm size"
-}
-
-variable "AKS_Default_Node_pool_enable_auto_scale" {
-  type        = string
-  description = "Default node pool enable auto scale"
-}
-
 variable "Azure_Vnet_Name" {
   type        = string
   description = "Virtual Network name"
 }
 
-variable "Azure_Vnet_address_space" {
+variable "Azure_AKS_Subnet_Name" {
   type        = string
-  description = "Virtual Network adress space"
+  description = "Virtual Network sub net name"
 }
 
 variable "Azure_Subnet_Name" {
   type        = string
   description = "Virtual Network sub net name"
 }
-
 variable "Azure_Subnet_Name_address_prefixes" {
   type        = string
   description = "Virtual Network subnet address prefixes "
 }
-variable "subscription_id" {
+
+variable "api_management_name" {
   type        = string
-  description = "Subscription ID"
+  description = "Api Management Name"
 }
 
-variable "tenant_id" {
+variable "api_management_publisher" {
   type        = string
-  description = "Tenant ID"
+  description = "Api Management publisher"
 }
 
-variable "client_id" {
+variable "api_management_publisher_email" {
   type        = string
-  description = "Client ID"
+  description = "Api Management publisher EMail"
 }
 
-variable "client_secret" {
+variable "sku_name" {
   type        = string
-  description = "ClientSecret"
+  description = "Sku Name"
+}
+variable "api_management_virtual_network_type" {
+  type        = string
+  description = "Api Management virtual network type"
+}
+
+variable "api_management_gateway_name" {
+  type        = string
+  description = "Api Management gateway name"
+}
+
+variable "api_management_gateway_city" {
+  type        = string
+  description = "Api Management gateway city"
+}
+
+variable "api_management_gateway_district" {
+  type        = string
+  description = "Api Management gateway district"
+}
+
+variable "api_management_gateway_location_name" {
+  type        = string
+  description = "Api Management gateway Location Name"
 }
