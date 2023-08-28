@@ -12,7 +12,7 @@ Azure_Subnet_Name_address_prefixes="125.11.0.0/24"
 #end of vnet and subnet
 acr_name            = "testacrpoc08112023"
 role_definition_name="AcrPull"
-azurerm_container_registry_sku="basic"
+azurerm_container_registry_sku="Basic"
 azurerm_container_registry_Admin_Enabled=false
 Azure_Role_Assignment_skip_service_principal_aad_check=true
 AKS_Default_Node_pool_Name="acrlobtpool"
