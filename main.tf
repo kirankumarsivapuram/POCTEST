@@ -58,7 +58,7 @@ resource "azurerm_api_management" "apimaanagement" {
     sku_name = var.sku_name
     virtual_network_type = var.api_management_virtual_network_type
     virtual_network_configuration {
-    subnet_id = azurerm_subnet.virtualsubnet.id
+    #subnet_id = azurerm_subnet.virtualsubnet.id
    } 
 }
 
