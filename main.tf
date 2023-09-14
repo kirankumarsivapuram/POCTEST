@@ -57,9 +57,9 @@ resource "azurerm_api_management" "apimaanagement" {
     publisher_email = var.api_management_publisher_email
     sku_name = var.sku_name
     virtual_network_type = var.api_management_virtual_network_type
-    #virtual_network_configuration {
-    #subnet_id = azurerm_subnet.virtualsubnet.id
-   #} 
+    virtual_network_configuration {
+    subnet_id = azurerm_subnet.virtualsubnet.id
+   } 
 }
 
 resource "azurerm_api_management_gateway" "apigateway" {
