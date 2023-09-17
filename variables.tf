@@ -1,13 +1,26 @@
 variable "resource_group_name" {
   type        = string
-  description = "Resource Group name in Azure"
+  description = "RG name in Azure"
 }
 
-variable "resource_group_location" {
+variable "location" {
   type        = string
-  description = "Resource Group location in Azure"
+  description = "Resources location in Azure"
+}
+variable "acr_name" {
+  type        = string
+  description = "ACR name"
+ 
+}
+variable "azurerm_container_registry_sku" {
+  type        = string
+  description = "ACR SKU"
 }
 
+variable "azurerm_container_registry_Admin_Enabled" {
+  type        = string
+  description = "ACR Admin Enabled"
+}
 variable "subscription_id" {
   type        = string
   description = "Subscription ID"
